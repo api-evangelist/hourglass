@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/* on hourglass.com and docs.hourglass.com
+notes: >-
+  hourglass.com sits behind Cloudflare and returns 403 to automated clients for
+  all /.well-known/ paths. docs.hourglass.com serves no security.txt. No OpenID,
+  OAuth authorization-server, api-catalog, or ai-plugin discovery documents are
+  published. Hourglass is a DeFi smart-contract protocol (no HTTP OAuth surface).
+hosts:
+  - host: https://hourglass.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+  - host: https://docs.hourglass.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /llms.txt
+        status: 200
+        file: ../llms/hourglass-llms.txt

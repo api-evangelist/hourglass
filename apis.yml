@@ -1,8 +1,30 @@
 aid: hourglass
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hourglass.png
 name: Hourglass
-description: 'Hourglass is a company surfaced as a portfolio company of electric-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: defi. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Hourglass is a DeFi protocol and time-bound token (TBT) infrastructure that
+  invented a primitive for tokenizing staked, locked, or time-committed on-chain
+  assets, letting holders trade their place in a lock-up queue for early
+  liquidity. Its products include an RFQ marketplace built on OpenSea's Seaport
+  for trading time-bound tokens, non-custodial on-chain vaults (including the
+  Pre-iUSDT stable vault and the sunset Hourglass Boost product), and
+  institutional-grade yield infrastructure that bridges on-chain DeFi capital
+  with traditional capital markets. TBTs are semi-fungible ERC-1155 tokens
+  issued by Hourglass custodian smart contracts on Ethereum. Launch partners
+  included Lido, Frax, and Convex. Founded in 2022 and backed by a $4.2M seed
+  round led by Electric Capital, with Coinbase Ventures, Circle Ventures, and
+  others participating.
 url: https://raw.githubusercontent.com/api-evangelist/hourglass/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +34,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Defi
+- Blockchain
+- Ethereum
+- Tokenization
+- Yield
+- Marketplace
+- Smart Contracts
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,28 @@ maintainers:
 common:
 - type: Website
   url: https://hourglass.com/
+- type: Documentation
+  url: https://docs.hourglass.com/
+- type: DeveloperPortal
+  url: https://docs.hourglass.com/
+- type: GitHubOrganization
+  url: https://github.com/pitch-foundation
+- type: Security
+  url: https://docs.hourglass.com/security/immunefi-bug-bounty
+- type: SDKs
+  url: packages/hourglass-packages.yml
+- type: Packages
+  url: packages/hourglass-packages.yml
+- type: LLMsTxt
+  url: llms/hourglass-llms.txt
+- type: WellKnown
+  url: well-known/hourglass-well-known.yml
+- type: DomainSecurity
+  url: security/hourglass-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/hourglass-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

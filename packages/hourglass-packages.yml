@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/package/hourglass-sdk
+packages:
+  - language: typescript
+    registry: npm
+    name: hourglass-sdk
+    version: 0.1.161
+    url: https://www.npmjs.com/package/hourglass-sdk
+    install: npm install hourglass-sdk
+    repository: https://github.com/pitch-foundation/hourglass-sdk
+    description: >-
+      TypeScript SDK for interacting with the Hourglass RFQ (Request for Quote)
+      protocol and the Seaport marketplace on Ethereum. Includes WebSocket
+      providers for the Hourglass RFQ protocol and Seaport order utilities.
+      This is a smart-contract / on-chain SDK, not a REST API client.
+    official: true
